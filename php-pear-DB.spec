@@ -56,6 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/%{_class}/{IDEAS,MAINTAINERS,STATUS,TESTERS,tests/*}
-%dir %{php_pear_dir}/%{_class}
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}/*.php
