@@ -1,11 +1,12 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		DB
+%define		_status		stable
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl):	%{_pearname} - Abstrakcyjna wartswa baz danych
 Name:		php-pear-%{_pearname}
 Version:	1.3
-Release:	4
+Release:	5
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -37,6 +38,8 @@ currently supported extensions are: dbase, fbsql, interbase, informix,
 msql, mssql, mysql, oci8, odbc, pgsql and sybase (a DB style interface
 to LDAP servers is also avaible from a separate package).
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 DB to warstwa abstrakcyji baz danych daj±ca:
 - obiektowo zorientowane API dla zapytañ
@@ -60,6 +63,8 @@ w PHP. Aktualnie obs³ugiwane rozszerzenia to: dbase, fbsql, interbase,
 informix, msql, mssql, oci8, odbc, pgsql i sybase (podobny do DB
 interfejs do serwerów LDAP jest dostêpny w osobnym pakiecie).
 
+Ta klasa ma w PEAR status: %{_status}.
+
 %prep
 %setup -q -c
 
@@ -76,5 +81,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc %{_pearname}-%{version}/{%{_class}/{IDEAS,MAINTAINERS,STATUS,TESTERS},tests/*}
+%dir %{php_pear_dir}/%{_class}
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}/*.php
