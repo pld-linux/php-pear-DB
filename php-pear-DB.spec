@@ -5,7 +5,7 @@ Summary:	%{_class} - Database Abstraction Layer
 Summary(pl):	%{_class} - Abstrakcyjna wartswa baz danych
 Name:		php-pear-%{_pearname}
 Version:	1.3
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -75,6 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/%{_class}/{IDEAS,MAINTAINERS,STATUS,TESTERS,tests/*}
+%doc %{_pearname}-%{version}/{%{_class}/{IDEAS,MAINTAINERS,STATUS,TESTERS},tests/*}
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}/*.php
