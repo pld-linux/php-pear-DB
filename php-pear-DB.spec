@@ -2,16 +2,16 @@
 %define		_class		DB
 %define		_status		stable
 %define		_pearname	%{_class}
-%define		_version	%{version}RC1
+%define		_version	%{version}RC2
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl):	%{_pearname} - Abstrakcyjna wartswa baz danych
 Name:		php-pear-%{_pearname}
 Version:	1.5.0
-Release:	0.RC1
+Release:	0.RC2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{_version}.tgz
-# Source0-md5:	e63f9a6620cff729107e0494fe84c957
+# Source0-md5:	09b8ea3d61b855256e85bfccc214fd4a
 URL:		http://pear.php.net/package/%{_pearname}/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
