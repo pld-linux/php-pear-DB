@@ -4,7 +4,7 @@
 %define		_pearname	%{_class}
 
 Summary:	%{_pearname} - Database Abstraction Layer
-Summary(pl):	%{_pearname} - Abstrakcyjna wartswa baz danych
+Summary(pl):	%{_pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{_pearname}
 Version:	1.6.8
 Release:	1
@@ -43,7 +43,7 @@ to LDAP servers is also avaible from a separate package).
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-DB to warstwa abstrakcyji baz danych daj±ca:
+DB to warstwa abstrakcji baz danych daj±ca:
 - obiektowo zorientowane API dla zapytañ
 - format DSN (data source name) do podawania serwerów baz danych
 - emulacjê prepare/execute dla baz danych nie obs³uguj±cych natywnie
