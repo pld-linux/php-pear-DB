@@ -40,7 +40,7 @@ currently supported extensions are: dbase, fbsql, interbase, informix,
 msql, mssql, mysql, oci8, odbc, pgsql and sybase (a DB style interface
 to LDAP servers is also avaible from a separate package).
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 DB to warstwa abstrakcyji baz danych daj±ca:
