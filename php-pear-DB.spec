@@ -9,8 +9,8 @@ Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-BuildRequires:	rpm-php-pearprov
 URL:		http://pear.php.net/
+BuildRequires:	rpm-php-pearprov
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -37,6 +37,27 @@ msql, mssql, mysql, oci8, odbc, pgsql and sybase (a DB style interface
 to LDAP servers is also avaible from a separate package).
 
 %description -l pl
+DB to warstwa abstrakcyji baz danych daj±ca:
+- obiektowo zorientowane API dla zapytañ
+- format DSN (data source name) do podawania serwerów baz danych
+- emulacjê prepare/execute dla baz danych nie obs³uguj±cych natywnie
+  tych poleceñ
+- obiekt wynikowy dla ka¿dej odpowiedzi na zapytanie
+- przeno¶ne kody b³êdów
+- emulacjê sekwencji
+- sekwencyjne i niesekwencyjne pobieranie wierszy oraz pobieranie
+  masowe
+- obs³ugê danych w formacie tablic uporz±dkowanych, tablic
+  asocjacyjnych i obiektów dla pobieranych wierszy
+- obs³ugê limitu wierszy
+- obs³ugê transakcji
+- interfejs do informacji o tabelach
+- dokumentacjê API w formacie DocBook i PHPDoc.
+
+Warstwa DB jest umieszczona powy¿ej istniej±cych rozszerzeñ baz danych
+w PHP. Aktualnie obs³ugiwane rozszerzenia to: dbase, fbsql, interbase,
+informix, msql, mssql, oci8, odbc, pgsql i sybase (podobny do DB
+interfejs do serwerów LDAP jest dostêpny w osobnym pakiecie).
 
 %prep
 %setup -q -c
