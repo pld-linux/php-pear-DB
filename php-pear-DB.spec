@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		DB
 %define		_pearname	%{_class}
-Summary:	%{_class} - Database Abstraction Layer
-Summary(pl):	%{_class} - Abstrakcyjna wartswa baz danych
+Summary:	%{_pearname} - Database Abstraction Layer
+Summary(pl):	%{_pearname} - Abstrakcyjna wartswa baz danych
 Name:		php-pear-%{_pearname}
 Version:	1.3
 Release:	3
