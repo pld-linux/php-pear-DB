@@ -1,17 +1,18 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		DB
-%define		_status		stable
+%define		_status		beta
 %define		_pearname	%{_class}
-%define		_version	%{version}RC2
+%define		_version	%{version}RC3
+
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl):	%{_pearname} - Abstrakcyjna wartswa baz danych
 Name:		php-pear-%{_pearname}
-Version:	1.5.0
-Release:	0.RC2
+Version:	1.6.0
+Release:	0.RC3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{_version}.tgz
-# Source0-md5:	09b8ea3d61b855256e85bfccc214fd4a
+# Source0-md5:	3006bce7c20c0153ef881412e7d08967
 URL:		http://pear.php.net/package/DB/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
