@@ -2,15 +2,16 @@
 %define		_class		DB
 %define		_status		stable
 %define		_pearname	%{_class}
+%define		_version	%{version}RC1
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl):	%{_pearname} - Abstrakcyjna wartswa baz danych
 Name:		php-pear-%{_pearname}
-Version:	1.4.0
-Release:	1
+Version:	1.5.0
+Release:	0.RC1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	01729b5bfe1dad62393bdd5d15cf55fa
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+Source0:	http://pear.php.net/get/%{_pearname}-%{_version}.tgz
+# Source0-md5:	e63f9a6620cff729107e0494fe84c957
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -73,15 +74,15 @@ Ta klasa ma w PEAR status: %{_status}.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 
-install %{_pearname}-%{version}/%{_class}.php $RPM_BUILD_ROOT%{php_pear_dir}/
-install %{_pearname}-%{version}/%{_class}/*.php	$RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install %{_pearname}-%{_version}/%{_class}.php   $RPM_BUILD_ROOT%{php_pear_dir}/
+install %{_pearname}-%{_version}/%{_class}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/doc/* %{_pearname}-%{version}/tests
+%doc %{_pearname}-%{_version}/doc/* %{_pearname}-%{_version}/tests
 %dir %{php_pear_dir}/%{_class}
 %{php_pear_dir}/*.php
 %{php_pear_dir}/%{_class}/*.php
