@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl):	%{_pearname} - Abstrakcyjna wartswa baz danych
 Name:		php-pear-%{_pearname}
-Version:	1.6.4
+Version:	1.6.5
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	2db96b1d13da33fe530b9b1ea65d13ae
+# Source0-md5:	fb62ce9e84f48110304638816ad1b01b
 URL:		http://pear.php.net/package/DB/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
