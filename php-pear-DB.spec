@@ -2,12 +2,11 @@
 %define		_class		DB
 %define		_status		stable
 %define		_pearname	%{_class}
-
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl):	%{_pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{_pearname}
 Version:	1.7.6
-Release:	2
+Release:	3
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
@@ -17,7 +16,7 @@ URL:		http://pear.php.net/package/DB/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
-Requires:	php-pear-PEAR >= 1:1.0b1
+Requires:	php-pear-PEAR-core >= 1:1.0b1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
