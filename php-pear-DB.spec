@@ -3,7 +3,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}
 Summary:	%{_pearname} - Database Abstraction Layer
-Summary(pl):	%{_pearname} - Abstrakcyjna warstwa baz danych
+Summary(pl.UTF-8):   %{_pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{_pearname}
 Version:	1.7.6
 Release:	3
@@ -46,34 +46,34 @@ to LDAP servers is also avaible from a separate package).
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-DB to warstwa abstrakcji baz danych daj±ca:
-- obiektowo zorientowane API dla zapytañ
-- format DSN (data source name) do podawania serwerów baz danych
-- emulacjê prepare/execute dla baz danych nie obs³uguj±cych natywnie
-  tych poleceñ
-- obiekt wynikowy dla ka¿dej odpowiedzi na zapytanie
-- przeno¶ne kody b³êdów
-- emulacjê sekwencji
+%description -l pl.UTF-8
+DB to warstwa abstrakcji baz danych dajÄ…ca:
+- obiektowo zorientowane API dla zapytaÅ„
+- format DSN (data source name) do podawania serwerÃ³w baz danych
+- emulacjÄ™ prepare/execute dla baz danych nie obsÅ‚ugujÄ…cych natywnie
+  tych poleceÅ„
+- obiekt wynikowy dla kaÅ¼dej odpowiedzi na zapytanie
+- przenoÅ›ne kody bÅ‚Ä™dÃ³w
+- emulacjÄ™ sekwencji
 - sekwencyjne i niesekwencyjne pobieranie wierszy oraz pobieranie
   masowe
-- obs³ugê danych w formacie tablic uporz±dkowanych, tablic
-  asocjacyjnych i obiektów dla pobieranych wierszy
-- obs³ugê limitu wierszy
-- obs³ugê transakcji
+- obsÅ‚ugÄ™ danych w formacie tablic uporzÄ…dkowanych, tablic
+  asocjacyjnych i obiektÃ³w dla pobieranych wierszy
+- obsÅ‚ugÄ™ limitu wierszy
+- obsÅ‚ugÄ™ transakcji
 - interfejs do informacji o tabelach
-- dokumentacjê API w formacie DocBook i PHPDoc.
+- dokumentacjÄ™ API w formacie DocBook i PHPDoc.
 
-Warstwa DB jest umieszczona powy¿ej istniej±cych rozszerzeñ baz danych
-w PHP. Aktualnie obs³ugiwane rozszerzenia to: dbase, fbsql, interbase,
+Warstwa DB jest umieszczona powyÅ¼ej istniejÄ…cych rozszerzeÅ„ baz danych
+w PHP. Aktualnie obsÅ‚ugiwane rozszerzenia to: dbase, fbsql, interbase,
 informix, msql, mssql, oci8, odbc, pgsql i sybase (podobny do DB
-interfejs do serwerów LDAP jest dostêpny w osobnym pakiecie).
+interfejs do serwerÃ³w LDAP jest dostÄ™pny w osobnym pakiecie).
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -82,7 +82,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
