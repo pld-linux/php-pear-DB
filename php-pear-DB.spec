@@ -5,13 +5,13 @@
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl.UTF-8):	%{_pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{_pearname}
-Version:	1.7.12
+Version:	1.7.13
 Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	b86134520d473db3c5fb87b68a820037
+# Source0-md5:	39b451245941a7059511a852f18b4946
 URL:		http://pear.php.net/package/DB/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
