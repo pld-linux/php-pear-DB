@@ -3,7 +3,7 @@
 %define		_status		beta
 %define		_pearname	%{_class}
 %define		subver	RC1
-%define		rel		1
+%define		rel		2
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl.UTF-8):	%{_pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{_pearname}
@@ -14,12 +14,12 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
 # Source0-md5:	30cf27d0790cd763900eea35b4b75c01
 URL:		http://pear.php.net/package/DB/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
-Requires:	php-pear-PEAR-core >= 1:1.4.0
+Requires:	php-pear-PEAR-core >= 1:1.0-0.b1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
