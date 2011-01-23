@@ -2,8 +2,8 @@
 %define		_class		DB
 %define		_status		beta
 %define		_pearname	%{_class}
-%define		subver	RC1
-%define		rel		2
+%define		subver	RC2
+%define		rel		1
 Summary:	%{_pearname} - Database Abstraction Layer
 Summary(pl.UTF-8):	%{_pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{_pearname}
@@ -12,7 +12,7 @@ Release:	0.%{subver}.%{rel}
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
-# Source0-md5:	30cf27d0790cd763900eea35b4b75c01
+# Source0-md5:	078f9e526ddd7263bbd0d6fd7623f3d3
 URL:		http://pear.php.net/package/DB/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
