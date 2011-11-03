@@ -1,22 +1,19 @@
+%define		status		beta
+%define		pearname	DB
 %include	/usr/lib/rpm/macros.php
-%define		_class		DB
-%define		_status		beta
-%define		_pearname	%{_class}
-%define		subver	RC2
-%define		rel		1
-Summary:	%{_pearname} - Database Abstraction Layer
-Summary(pl.UTF-8):	%{_pearname} - Abstrakcyjna warstwa baz danych
-Name:		php-pear-%{_pearname}
+Summary:	%{pearname} - Database Abstraction Layer
+Summary(pl.UTF-8):	%{pearname} - Abstrakcyjna warstwa baz danych
+Name:		php-pear-%{pearname}
 Version:	1.7.14
-Release:	0.%{subver}.%{rel}
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
-# Source0-md5:	078f9e526ddd7263bbd0d6fd7623f3d3
+Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
+# Source0-md5:	b38357ad173a43e3c34e1b5527571fec
 URL:		http://pear.php.net/package/DB/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.580
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
 Requires:	php-pear-PEAR-core >= 1:1.0-0.b1
@@ -46,7 +43,7 @@ currently supported extensions are: dbase, fbsql, interbase, informix,
 msql, mssql, mysql, oci8, odbc, pgsql and sybase (a DB style interface
 to LDAP servers is also avaible from a separate package).
 
-In PEAR status of this package is: %{_status}.
+In PEAR status of this package is: %{status}.
 
 %description -l pl.UTF-8
 DB to warstwa abstrakcji baz danych dająca:
@@ -71,7 +68,7 @@ w PHP. Aktualnie obsługiwane rozszerzenia to: dbase, fbsql, interbase,
 informix, msql, mssql, oci8, odbc, pgsql i sybase (podobny do DB
 interfejs do serwerów LDAP jest dostępny w osobnym pakiecie).
 
-Ta klasa ma w PEAR status: %{_status}.
+Ta klasa ma w PEAR status: %{status}.
 
 %prep
 %pear_package_setup
@@ -87,7 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc install.log
-%doc docs/%{_pearname}/doc/*
+%doc docs/%{pearname}/doc/*
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/DB/*.php
