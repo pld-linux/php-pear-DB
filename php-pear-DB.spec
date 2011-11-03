@@ -1,4 +1,4 @@
-%define		status		beta
+%define		status		stable
 %define		pearname	DB
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Database Abstraction Layer
