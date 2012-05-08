@@ -5,7 +5,7 @@ Summary:	%{pearname} - Database Abstraction Layer
 Summary(pl.UTF-8):	%{pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{pearname}
 Version:	1.7.14
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{pearname}-%{version}.tgz
@@ -87,4 +87,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/%{pearname}/doc/*
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/*.php
+%dir %{php_pear_dir}/DB
 %{php_pear_dir}/DB/*.php
