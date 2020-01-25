@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	DB
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Database Abstraction Layer
 Summary(pl.UTF-8):	%{pearname} - Abstrakcyjna warstwa baz danych
 Name:		php-pear-%{pearname}
